@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}{1.e4 -- Italian opening}}{2}{section.1}%
+\contentsline {section}{\numberline {2}{1.e4 2.c5 -- Sicilian Defense}}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}{Closed Sicilian}}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3}{1.c4 -- English opening}}{4}{section.3}%

@@ -1,0 +1,155 @@
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+10pt, % Main document font size
+a4paper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+headinclude,footinclude, % Extra spacing for the header and footer
+BCOR5mm, % Binding correction
+]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{geometry}
+\geometry{textheight = 22cm}
+
+\usepackage{comment}
+
+\usepackage{skak}
+
+\input{structure.tex} % Include the structure.tex file which specified the document structure and layout
+
+%----------------------------------------------------------------------------------------
+%   TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Notes on chess}} % The article title
+
+%\subtitle{Subtitle} % Uncomment to display a subtitle
+
+\author{\spacedlowsmallcaps{Bruno Ximenez} }% The article author(s) - author affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+\date{21/12/2020} % An optional date to appear under the author(s)
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%   HEADERS
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\sectionmark}[1]{\markright{\spacedlowsmallcaps{#1}}} % The header for all pages (oneside) or for even pages (twoside)
+%\renewcommand{\subsectionmark}[1]{\markright{\thesubsection~#1}} % Uncomment when using the twoside option - this modifies the header on odd pages
+\lehead{\mbox{\llap{\small\thepage\kern1em\color{halfgray} \vline}\color{halfgray}\hspace{0.5em}\rightmark\hfil}} % The header style
+
+\pagestyle{scrheadings} % Enable the headers specified in this block
+
+
+%----------------------------------------------------------------------------------------
+%   TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title/author/date block
+
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+\tableofcontents % Print the table of contents
+
+\listoffigures % Print the list of figures
+
+\listoftables % Print the list of tables
+
+\newpage
+
+\section{1.e4 -- Italian opening}
+
+The italian game is known as the opening with e4 and black's most popular response e5, followed by 2. Nf3 Nc6. The idea being white attacks the advanced pawn and Nc6 protects it. An aggressive follow up is 3.Bc4, attacking a weak pawn on f7.
+
+
+Two popular responses for Black are the symmetrical variation, 3. ... Bc5 and the two knights defense, 3. ... Nf6. The game can be followed by 4. c3 with the idea of advancing d4 attacking the pawn e5. Black can continue with 4. ... Nf6 ignoring the threat on e5. 
+
+% \medskip
+
+\newgame %Start a new chess game
+
+% \showboard %Print the chessboard
+
+% % \clearpage
+
+
+\mainline{1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4. c3 Nf6}
+
+Now we investigate the 5. d4 move. Black's response is 5. ... exd4 6. cxd4 Bb4+. Usual response is 7. Nc3 and then Nf6 is free to capture e4 because Nc3 is pinned!
+
+\mainline{5. }
+
+% \showboard
+
+% \lastmove{} Is the most common opening move
+% \vspace{5mm}
+
+
+% \mainline{1...e5 2.Nf3 Nc6 3.d4}
+
+% {\showonlywhite %only the white side is printed
+% \showboard }
+
+% From this point, \variation{3.d3 d5} is a good but far less aggressive alternative.
+% \vspace{5mm}
+
+% \mainline{3...e5xd4 4.Bb5 a6 5.O-O}
+
+
+% {\showonly{B,Q,q,K,k,N,n} %Only specified pieces are rendered
+% \showboard}
+
+
+% \clearpage
+
+% \newgame
+
+% %board position in FEN notation.
+% \fenboard{r5k1/1b1p1ppp/p7/1p1Q4/2p1r3/PP4Pq/BBP2b1P/R4R1K w - - 0 20}
+
+\begin{center}
+
+\showboard
+
+\end{center}
+
+\newpage
+\section{1.e4 2.c5 -- Sicilian Defense}
+
+The Sicilian defense is an effective and sharp response to white's 1.e4 opening. It is defined by 1.e4 2.c5.
+The different ways to continue the opening from this point on will be called Sicilian Defense variants. 
+The main idea behind 1. ... c5 is to attack and dominate the central square d4 with a side pawn ready to exchange with d file white's pawn. Here, the central pawns would have more positional value than the side pawns. This simple idea shapes the next black's moves, which will tend to build up pressure on that square.
+
+\newgame %Start a new chess game
+\mainline{1.e4 c5}
+\begin{center}
+\showboard
+\end{center}
+
+
+\subsection{Closed Sicilian}
+
+The closed Sicilian is defined by 1.e4 c5 2.Nc3. White is now, in general, demonstrating that advancing the d pawn to d4 is not in his immediate plan. A common follow up is:
+
+\newgame %Start a new chess game
+\mainline{1.e4 c5 2.Nc3 Nc6 3.g3 g6 4.Bg2 Bg7}
+\begin{center}
+\showboard
+\end{center}
+
+
+
+\newpage
+\section{1.c4 -- English opening}
+
+
+
+\end{document}
